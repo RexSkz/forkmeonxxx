@@ -5,15 +5,69 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 	<link rel="shortcut icon" href="https://templates.rexskz.info/favicon.ico">
-	<style>a{color:#666;}</style>
+	<style>
+		@keyframes blink {
+			0% { opacity: 0; }
+			40% { opacity: 0; }
+			50% { opacity: 1; }
+			90% { opacity: 1; }
+			100% { opacity: 0; }
+		}
+		::selection {
+			background: rgba(193, 193, 193, 0.99);
+			color: #000;
+		}
+		::-moz-selection {
+			background: rgba(193, 193, 193, 0.99);
+			color: #000;
+		}
+		body {
+			margin: 10px;
+			background: #000;
+			color: #bfbfbf;
+			font-family: 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace !important;
+			font-size: 14px;
+		}
+		h1, h3, p, a {
+			font-size: 14px;
+			line-height: 14px;
+			margin: 14px 0;
+			font-weight: normal;
+			position: relative;
+			word-break: break-all;
+		}
+		h1 {
+			margin: 0;
+		}
+		a {
+			color: #fff;
+			text-decoration: underline;
+		}
+		.cursor {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			display: inline-block;
+			background: #bfbfbf;
+			width: 7px;
+			vertical-align: middle;
+			animation: blink 1s infinite;
+		}
+	</style>
 	<title>Why not fork me on GitHub or Coding?</title>
 </head>
 <body>
-    <h1>This is Rex</h1>
-	<h3>Why not fork me on GitHub or Coding?</h3>
-	<p>GitHub: <a href="https://github.com/RexSkz">https://github.com/RexSkz</a></p>
-	<p>Coding: <a href="https://coding.net/u/rexskz">https://coding.net/u/rexskz</a></p>
-    <h3>Or visit my website?</h3>
-    <p>/^1?$|^(11+?)\1+$/: <a href="https://www.rexskz.info">https://www.rexskz.info</a></p>
+	<h1>+--------------------------+</h1>
+	<h1>| Hi all, this is Rex Zeng |</h1>
+	<h1>+--------------------------+</h1>
+	<h3>$ Why not fork me on GitHub or Coding?</h3>
+	<p>&nbsp;&nbsp;GitHub: <a href="https://github.com/RexSkz">https://github.com/RexSkz</a></p>
+	<p>&nbsp;&nbsp;Coding: <a href="https://coding.net/u/rexskz">https://coding.net/u/rexskz</a></p>
+    <h3>$ Or visit my website?</h3>
+	<p>&nbsp;&nbsp;/^1?$|^(11+?)\1+$/: <a href="https://www.rexskz.info">https://www.rexskz.info</a></p>
+    <h3>$ My resume is here.</h3>
+	<p>&nbsp;&nbsp;View page: <a href="https://www.rexskz.info/resume/">Rex Zeng 的个人简历</a></p>
+	<h3>$ Special thanks...</h3>
+	<p>&nbsp;&nbsp;Hosted by <a href="https://pages.coding.me">Coding Pages</a>.<span class="cursor"></span></p>
 </body>
 </html>
