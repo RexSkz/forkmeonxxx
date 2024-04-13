@@ -47,7 +47,7 @@
 			width: max-content;
 			font-weight: bold;
 		}
-		h1, h3, p, a {
+		h1, p, a {
 			font-family: 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace !important;
 			font-size: 14px;
 			line-height: 18px;
@@ -57,8 +57,8 @@
 			word-break: break-all;
 			white-space: pre-wrap;
 		}
-		h1 {
-			margin: 0;
+		h1, p {
+			opacity: 0;
 		}
 		a {
 			color: cyan;
@@ -119,6 +119,16 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CM11W55R2X"></script>
 	<script>
 		document.getElementById('this-login').innerText = `${new Date().toGMTString()}`;
+		const items = [...document.querySelectorAll('h1, p')];
+		let currentIndex = 0;
+		const interval = setInterval(() => {
+			if (currentIndex >= items.length) {
+				clearInterval(interval);
+				return;
+			}
+			items[currentIndex].style.opacity = 1;
+			currentIndex++;
+		}, 100);
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
