@@ -28,62 +28,101 @@
 			color: #dcdde4;
 			font-size: 14px;
 		}
+		.prompt {
+			color: #fff;
+			font-weight: bold;
+		}
+		.gradient {
+			background-image: linear-gradient(
+				to right,
+				#ff3e18 16.66%,
+				#fc9a00 16.66%, #fc9a00 33.32%,
+				#ffd800 33.32%, #ffd800 49.98%,
+				#39ea7c 49.98%, #39ea7c 66.64%,
+				#0bb2ff 66.64%, #0bb2ff 80.3%,
+				#985aff 80.3%
+			);
+			-webkit-background-clip: text;
+			color: transparent;
+			width: max-content;
+			font-weight: bold;
+		}
 		h1, h3, p, a {
 			font-family: 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace !important;
 			font-size: 14px;
-			line-height: 14px;
-			margin: 14px 0;
+			line-height: 18px;
+			margin: 0;
 			font-weight: normal;
 			position: relative;
 			word-break: break-all;
+			white-space: pre-wrap;
 		}
 		h1 {
 			margin: 0;
 		}
 		a {
-			color: #fff;
+			color: cyan;
 			text-decoration: underline;
 		}
 		.cursor {
-			position: absolute;
-			top: 0;
-			bottom: 0;
 			display: inline-block;
 			background: #bfbfbf;
 			width: 7px;
-			vertical-align: middle;
+			height: 18px;
+			vertical-align: top;
 			animation: blink 1s infinite;
 		}
 	</style>
 	<title>Why not fork me on GitHub?</title>
 </head>
 <body>
-	<h1>+--------------------------+</h1>
-	<h1>| Hi all, this is Rex Zeng |</h1>
-	<h1>+--------------------------+</h1>
-	<h3>$ Why not fork me on GitHub?</h3>
-	<p>&nbsp;&nbsp;Portal: <a href="https://github.com/RexSkz" target="_blank">https://github.com/RexSkz</a></p>
-	<h3>$ Or visit my website?</h3>
-	<p>&nbsp;&nbsp;R·e^x / Zeng: <a href="https://www.rexskz.info" target="_blank">https://www.rexskz.info</a></p>
-	<h3>$ Or look at my Twitter?</h3>
-	<p>&nbsp;&nbsp;Twitter account: <a href="https://twitter.com/rexskz" target="_blank">RexSkz aka. skywalker_z</a></p>
-	<h3>$ Please enjoy yourself!</h3>
-	<p>&nbsp;&nbsp;^_^<span class="cursor"></span></p>
+	<p>Connecting to forkmeongithub.com...</p>
+	<p>Connection established.</p>
+	<p> </p>
+	<p>This login: <span id="this-login"></span></p>
+	<p> </p>
+    <p>                   _ooOoo_</p>
+    <p>                  o8888888o</p>
+    <p>                  88" . "88</p>
+    <p>                  (| -_- |)</p>
+    <p>                  O\  =  /O</p>
+    <p>               ____/`---'\____</p>
+    <p>             .'  \\|     |//  `.</p>
+    <p>            /  \\|||  :  |||//  \</p>
+    <p>           /  _||||| -:- |||||-  \</p>
+    <p>           |   | \\\  -  /// |   |</p>
+    <p>           | \_|  ''\---/''  |   |</p>
+    <p>           \  .-\__  `-`  ___/-. /</p>
+    <p>         ___`. .'  /--.--\  `. . __</p>
+    <p>      ."" '<  `.___\_<|>_/___.'  >'"".</p>
+    <p>     | | :  `- \`.;`\ _ /`;.`/ - ` : | |</p>
+    <p>     \  \ `-.   \_ __\ /__ _/   .-` /  /</p>
+    <p>======`-.____`-.___\_____/___.-`____.-'======</p>
+    <p>                   `=---='</p>
+    <p>^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</p>
+    <p>          God Bless       Never Crash</p>
+	<p> </p>
+	<h1 class="gradient">Why not fork me on GitHub?</h1>
+	<p> </p>
+	<p class="prompt">$ uname -a</p>
+	<p>Rex Zeng a.k.a skywalker_z, majored in Information Security, now work as a web developer.</p>
+	<p> </p>
+	<p class="prompt">$ ls -l ~</p>
+	<p>total 5</p>
+	<p>lrwxr-xr-x 1 rex 25 <a href="https://github.com/RexSkz" target="_blank">GitHub (RexSkz)</a></p>
+	<p>lrwxr-xr-x 1 rex 23 <a href="https://www.rexskz.info" target="_blank">Website (R·e^x/Zeng)</a></p>
+	<p>lrwxr-xr-x 1 rex 34 <a href="https://alive.bar/web/@skywalker_z" target="_blank">Mastodon (@skywalker_z@alive.bar)</a></p>
+	<p>lrwxr-xr-x 1 rex 26 <a href="https://twitter.com/rexskz" target="_blank">Twitter (RexSkz)</a></p>
+	<p>lrwxr-xr-x 1 rex 35 <a href="https://www.linkedin.com/in/rexskz/" target="_blank">LinkedIn (Rex Zeng)</a></p>
+	<p> </p>
+	<p class="prompt">$ <span class="cursor"></span></p>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CM11W55R2X"></script>
 	<script>
+		document.getElementById('this-login').innerText = `${new Date().toGMTString()}`;
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'G-CM11W55R2X');
-		setTimeout(console.log.bind(
-			null,
-			'%c %c不要用调试工具对人家做奇♂怪的事情啊！',
-			'background:url(https://static.rexskz.info/face/20170408010131.jpg)repeat-x;padding:10px 100% 20px 0',
-			'padding-bottom:10px;font-size:24px;font-family:"PingFang SC",微软雅黑,"WenQuanYi Micro Hei"'
-		));
-		console.log = () => {};
-		console.warn = () => {};
-		window.alert = () => {};
 	</script>
 </body>
 </html>
